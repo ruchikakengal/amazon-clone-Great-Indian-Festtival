@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+            alert("Form submitted successfully!");
+            document.querySelector(".contact-form").reset(); // Reset the form after submission
+        }
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="navbar">
+        <img class="amazon-logo" src="./amazon assets/logo.webp" alt="Amazon Logo">
+        <div class="location">
+            <span class="location-name">Deliver to Delhi 110099</span><br>
+            <span class="location-img"> <i class="fa-solid fa-location-dot"></i> </span>
+            <span class="update-location">Update Location</span>
+        </div>
+
+        <div class="search-bar">
+            <select name="type" class="select-type">
+                <option class="all">All</option>
+                <option value="clothes">Alexa</option>
+                <option>Amazon Devices</option>
+                <option>Amazon Fashion</option>
+                <option>Amazon Fresh</option>
+                <option>Appliances</option>
+                <option>Apps and Games</option>
+                <option>Baby</option>
+                <option>Beauty</option>
+                <option>Books</option>
+                <option>Car and Motorbike</option>
+                <option>Clothing and Accessories</option>
+                <option>Deals</option>
+                <option>Electronics</option>
+                <option>Furniture</option>
+            </select>
+            <input type="text" placeholder="Search Amazon.in" class="input-search">
+            <span class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+        </div>
+
+        <div class="language">
+            <select name="language" class="language-list">
+                <option value="english">EN</option>
+            </select>
+        </div>
+
+        <div class="sign-in">
+            <span class="sign-head">Hello, Sign In</span>
+            <div id="bottom">
+                <span class="sign-bottom">Account & Lists</span>
+                <i class="fa-solid fa-caret-down" style="color: #fff;"></i>
+            </div>
+        </div>
+
+        <div class="account">
+            <span class="location-name">Returns</span><br>
+            <span class="update-location">&Orders</span>
+        </div>
+
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+
+    <div class="lower-header">
+        <span class="lower-header-text">Home</span>
+        <span class="lower-header-text">Shop</span>
+        <span class="lower-header-text">Deals</span>
+        <span class="lower-header-text">New</span>
+        <span class="lower-header-text">Gift</span>
+        <span class="lower-header-text">Cart</span>
+        <span class="lower-header-text">Order</span>
+        <span class="lower-header-text">Help</span>
+        <span class="lower-header-text">Books</span>
+        <span class="lower-header-text">Music</span>
+        <span class="lower-header-text">Games</span>
+        <span class="lower-header-text">Prime</span>
+        <span class="lower-header-text">Kids</span>
+        <a href="Contact.html" class="lower-header-text">Contact Us</a>
+        <span class="lower-header-text">More</span>
+    </div>
+
+    <!-- Main Content Section -->
+    <main class="contact-container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, concerns, or feedback, please don’t hesitate to reach out to us. We're here to help!</p>
+
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Type your message here" rows="5" required></textarea>
+
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </main>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="footer-column">
+            <h3>Get to Know Us</h3>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Press Releases</a>
+            <a href="#">Amazon Science</a>
+        </div>
+        <div class="footer-column">
+            <h3>Connect with Us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="footer-column">
+            <h3>Make Money with Us</h3>
+            <a href="#">Sell on Amazon</a>
+            <a href="#">Sell under Amazon Accelerator</a>
+            <a href="#">Protect and Build Your Brand</a>
+            <a href="#">Amazon Global Selling</a>
+            <a href="#">Supply to Amazon</a>
+            <a href="#">Become an Affiliate</a>
+            <a href="#">Fulfillment by Amazon</a>
+            <a href="#">Advertise Your Products</a>
+            <a href="#">Amazon Pay on Merchants</a>
+        </div>
+        <div class="footer-column">
+            <h3>Let Us Help You</h3>
+            <a href="#">Your Account</a>
+            <a href="#">Returns Centre</a>
+            <a href="#">Recalls and Product Safety Alerts</a>
+            <a href="#">100% Purchase Protection</a>
+            <a href="#">Amazon App Download</a>
+            <a href="#">Help</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" width="100">
+        <br><br>
+        <select>
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="mr">मराठी</option>
+        </select>
+        <select>
+            <option value="in">India</option>
+            <option value="uk">UK</option>
+            <option value="au">Australia</option>
+            <option value="ca">Canada</option>
+        </select>
+    </div>
+</body>
+</html>

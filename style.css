@@ -7,6 +7,17 @@ body {
   overflow-x: hidden;
 }
 
+.lower-header .lower-header-text {
+  text-decoration: none; 
+  color: white; 
+  cursor: pointer;
+}
+
+.lower-header .lower-header-text:hover {
+  text-decoration: none; 
+}
+
+
 #navbar {
   background-color: #131a22;
   height: 70px;
