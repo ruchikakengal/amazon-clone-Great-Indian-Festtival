@@ -122,8 +122,10 @@ body {
 }
 
 .sign-in {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   color: #fff;
+  text-decoration: none;
 }
 
 .sign-in:hover {
@@ -135,9 +137,23 @@ body {
   font-size: 12px;
 }
 
+#bottom {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
 .sign-bottom {
   font-size: 14px;
   font-weight: bold;
+}
+
+.sign-in a {
+  color: white;
+}
+
+.sign-in a:hover {
+  color: white; 
 }
 
 .account {
