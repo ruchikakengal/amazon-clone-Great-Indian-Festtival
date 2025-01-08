@@ -122,10 +122,48 @@ body {
 }
 
 .sign-in {
-  display: flex;
+  position: relative;
+  display: flex; 
   flex-direction: column;
-  color: #fff;
+  color: white;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+#bottom {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 1000;
+  width: 200px;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px 15px;
+  color: #000;
   text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.sign-in:hover .dropdown-menu {
+  display: block;
 }
 
 .sign-in:hover {
@@ -137,23 +175,21 @@ body {
   font-size: 12px;
 }
 
-#bottom {
-  display: flex;
-  align-items: center;
-  margin-top: 0.5rem;
-}
-
 .sign-bottom {
   font-size: 14px;
   font-weight: bold;
 }
 
 .sign-in a {
-  color: white;
+  color: rgb(60, 60, 60);
 }
 
 .sign-in a:hover {
-  color: white; 
+  color: rgb(0, 0, 0);
+}
+
+.sign-in .dropdown-item:hover {
+  color: #000000;
 }
 
 .account {
@@ -515,50 +551,4 @@ body {
 
 .list-footer li {
   margin-bottom: 0.5rem;
-}
-
-/* Parent container styling */
-.sign-in {
-    position: relative;
-    display: inline-block;
-    color: white;
-    font-family: Arial, sans-serif;
-    cursor: pointer;
-}
-
-#bottom {
-    display: flex;
-    align-items: center;
-}
-
-/* Dropdown menu styling */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%; /* Position below the parent */
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    overflow: hidden;
-    z-index: 1000;
-    width: 200px;
-}
-
-/* Dropdown items */
-.dropdown-item {
-    display: block;
-    padding: 10px 15px;
-    color: #000;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.dropdown-item:hover {
-    background-color: #f0f0f0;
-}
-
-/* Show dropdown on hover */
-.sign-in:hover .dropdown-menu {
-    display: block;
 }
