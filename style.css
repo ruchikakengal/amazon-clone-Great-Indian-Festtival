@@ -300,6 +300,56 @@ body {
   }
 }
 
+/* Electronics Section Styling */
+.electronics-section {
+  margin: 40px 20px;
+  text-align: center;
+}
+
+.electronics-head {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.electronics-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.electronics-item {
+  width: 180px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.electronics-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.electronics-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.electronics-item span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+}
+
+
 #image {
   border-radius: 5px;
 }
