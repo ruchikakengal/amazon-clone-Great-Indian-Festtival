@@ -1,4 +1,4 @@
-# Amazon Clone - Front-End Replica
+# Amazon Clone 
 
 This project is a front-end replica of the popular e-commerce platform **Amazon**. It replicates the user interface and layout of Amazon's homepage using HTML, CSS, and JavaScript to demonstrate how to build a basic e-commerce website.
 
@@ -8,12 +8,9 @@ This project is a front-end replica of the popular e-commerce platform **Amazon*
 
 - [Overview](#overview)
 - [Technologies Used](#technologies-used)
+- [Demo](#demo)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Demo](#demo)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -30,6 +27,12 @@ This project is intended for educational purposes to help you understand web dev
 - **HTML**: Used for the structure and layout of the web pages.
 - **CSS**: Provides the styling, ensuring the site is visually appealing and responsive.
 - **JavaScript**: Adds interactivity to the website, such as dynamic content updates and cart functionality.
+
+---
+
+## Demo
+
+https://amazon-clone-greatindianfestival.netlify.app/
 
 ---
 
