@@ -1,4 +1,10 @@
-html,
+/* Takes care of all the anchor tags throught the html file */
+html a{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,14 +12,15 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
-        .lower-header .lower-header-text {
-            text-decoration: none; /* Removes underline */
-            color: white; /* Matches text color of other spans */
-            cursor: pointer; /* Changes cursor to pointer for links */
+        
+.lower-header .lower-header-text {
+  text-decoration: none; /* Removes underline */
+  color: white; /* Matches text color of other spans */
+  cursor: pointer; /* Changes cursor to pointer for links */
 }
 
-        .lower-header .lower-header-text:hover {
-              text-decoration: underline; /* Optional: Add underline on hover for all */
+.lower-header .lower-header-text:hover {
+  text-decoration: underline; /* Optional: Add underline on hover for all */
 }
     
 #navbar {
@@ -401,7 +408,9 @@ body {
 }
 
 .see-more {
-  margin-left: -10rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
   text-decoration: none;
   color: rgb(26, 165, 158);
 }
