@@ -4,6 +4,17 @@ const conent=document.querySelector(".slide-carousel");
 conent.scrollLeft+=1100;
 event.preventDefault();
 })
+const dropdownButton = document.querySelector('.dropdown-button');
+const dropdownItems = document.querySelectorAll('.dropdown-content a');
+
+dropdownItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+        const selectedLanguage = item.innerHTML;
+        dropdownButton.innerHTML = selectedLanguage;
+    });
+});
+
 
 const left=document.querySelector(".left-btn");
 left.addEventListener("click",function(event){
