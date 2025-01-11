@@ -657,3 +657,10 @@ body {
 .list-footer li {
   margin-bottom: 0.5rem;
 }
+
+
+.error-message {
+  font-size: 12px;
+  margin-top: 5px;
+  color: red;
+}
