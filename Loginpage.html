@@ -12,10 +12,16 @@
         
         <div class="login-box">
             <h2>Sign in</h2>
-            <form action="/login" method="POST">
+            <form id="loginForm" action="/LoginPage.js" method="POST" novalidate>
                 <label for="email">Email or mobile phone number</label>
                 <input type="text" id="email" name="email" required>
                 
+                <script src="LoginPage.js" defer></script>
+
+                <span id="error-message" class="error-message" style="color: red; display: none;">
+                    Please enter a valid email or phone number.
+                </span>
+
                 <button type="submit" class="continue-btn">Continue</button>
 
                 <p class="disclaimer">
